@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
 html,
 body {
@@ -10,4 +11,8 @@ body {
 }
 body {
   background-color: #000000;
+}
+button {
+  background-color: royalblue;
+  cursor: pointer;
 }
