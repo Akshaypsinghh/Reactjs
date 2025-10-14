@@ -1,8 +1,121 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html,
 body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+.parent {
+  height: 100vh;
+  width: 100%;
   background-color: black;
-  color: white;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+.card {
+  height: 350px;
+  width: 300px;
+  background-color: white;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 20px;
+}
+.top button {
+  margin: 10px 20px;
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: none;
+  gap: 5px;
+  border: 1px solid rgb(155, 155, 155);
+  background-color: rgb(249, 247, 247);
+  color: rgb(90, 86, 86);
+  cursor: pointer;
+}
+.top button i {
+  font-size: 20px;
+}
+.top button h4 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.center {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+.center h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.center h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.center span {
+  font-size: 14px;
+  color: rgb(173, 165, 165);
+}
+.centerbtn {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+.centerbtn h6 {
+  padding: 7px;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: rgb(215, 218, 219);
+}
+.bottom {
+  margin-left: 20px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  border-top: 2px solid lightgray;
+  border-top: 1px solid rgb(200, 200, 200);
+}
+.bottom button {
+  margin-right: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: black;
+  color: rgb(208, 206, 206);
+  border: none;
+}
+.bottom p {
+  margin-top: 5px;
+  font-size: 12px;
+  color: rgb(173, 165, 165);
+}
+.bottom h3 {
+  font-size: 20px;
 }
