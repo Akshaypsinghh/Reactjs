@@ -14,11 +14,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .parent {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: black;
   padding: 20px;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 .card {
