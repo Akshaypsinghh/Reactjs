@@ -4,10 +4,7 @@ const card = (props) => {
   return (
     <div className="card">
       <div className="top">
-        <img
-          src="https://st3.depositphotos.com/1001860/16375/i/450/depositphotos_163757632-stock-photo-amazon-logo-on-a-white.jpg"
-          alt=""
-        />
+        <img src={props.brandLogo} alt="" />
 
         <button>
           <h4>Save</h4> <i class="ri-bookmark-line"></i>
@@ -15,18 +12,18 @@ const card = (props) => {
       </div>
       <div className="center">
         <h3>
-          {props.company} <span>5 days ago</span>
+          {props.company} <span>{props.date}</span>
         </h3>
-        <h4>Senior UI/UX Designer</h4>
+        <h4>{props.post}</h4>
         <div className="centerbtn">
-          <h6>Part-Time</h6>
-          <h6>Senior level</h6>
+          <h6>{props.tag1}</h6>
+          <h6>{props.tag2}</h6>
         </div>
       </div>
       <div className="bottom">
         <div>
-          <h3>$121/hr</h3>
-          <p>Mumbai,India</p>
+          <h3>{props.pay}</h3>
+          <p>{props.location}</p>
         </div>
         <button>Apply Now</button>
       </div>
